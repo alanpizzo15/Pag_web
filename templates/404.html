@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block titulo %}404{% endblock %}
+
+{% block cabecera %}<br><h1>Error 404</h1>{% endblock %}
+
+{% block contenido %}
+<br>
+<p>Página no encontrada</p>
+<img src="{% static IMG/error404.jpg %}">
+
+{% endblock %}

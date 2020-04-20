@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>{% block titulo %}{% endblock %}</title>
+	<link rel="shortcut icon" href="{% static 'IMG/icon.png' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'CSS/base.css' %}">
+	<link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Monoton|Special+Elite&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Chewy&display=swap" rel="stylesheet">	
+</head>
+<body>
+	<nav>
+		<ul><a href="{% url 'ingresar' %}">Ingresar</a></ul>
+		<ul><a href="{% url 'registro' %}">Registrar</a></ul>
+ 	</nav>
+ 	<form id="busqueda" method="get" action="/buscar/">
+ 		<input type="text" name="busca" placeholder="Buscar...">
+		<button>Buscar</button>
+	</form>	
+ 	<main>
+		<input type="checkbox" id="menu">
+		<label for="menu" class="menu"><img height="30" width="30" src="{% static 'IMG/iconomenu.png' %}"></label>
+							
+	<nav class="nav">
+		<li><a href="{% url 'inicio' %}">Inicio</a></li>		
+		<li><a href="{% url 'sobre' %}">¿Sabías que?</a></li>
+		<li><a href="{% url 'estilos' %}">Estilos de Cerveza</a></li>
+		<li><a href="{% url 'contacto' %}">Contacto</a></li>
+		<li><a href="{% url 'salir' %}">Salir</a></li>		
+	</nav>
+
+ 	</main>	
+ 	{% block cabecera %}
+	{% endblock %}
+
+	{% block contenido %} {% endblock %}
+	{% block pie %} 
+	<footer>Diseño de página web - Alan Pizzo</footer>
+	{% endblock %}
+</body>
+</html>

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block titulo %}Correo no enviado{% endblock %}
+
+{% block cabecera %}<br><h1>Fallo el envio</h1>{% endblock %}
+
+{% block contenido %}
+<br>
+
+<p>Falló el envio de correo</p>
+
+<img src="{% static IMG/noenviado.jpg %}">
+{% endblock %}

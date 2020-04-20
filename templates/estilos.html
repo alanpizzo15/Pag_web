@@ -1,0 +1,28 @@
+{% extends 'base.html' %}  
+
+{% load static %}
+
+{% block titulo %}Estilos{% endblock %}
+
+{% block cabecera %}<br><h1>Algunos Estilos</h1>{% endblock %}
+
+{% block contenido %} 
+<br>
+<img src="{% static 'IMG/estilos.jpg' %}">
+<br><br>
+<h2>Algunas Marcas Uruguayas</h2>
+<h3>Volcánica</h3>
+<p>La cervecería Volcánica es de Las Toscas, Canelones <br> se sube al podio de las mejores artesanales del país. Se caracterizan por hacer estilos belgas muy difíciles de <br>conseguir en Uruguay y la región debido a su perfil frutado y <br>el énfasis en el agregado de especias.</p><br>
+<img height="330" width="280" src="{% static 'IMG/Volcanica1.jpg' %}">&emsp;<img height="330" width="280" src="{% static 'IMG/volcanica2.jpg' %}">&emsp;<img height="330" width="280"src="{% static 'IMG/volcanica3.jpg' %}">&emsp;<img height="330" width="280" src="{% static 'IMG/volcanica4.jpg' %}"><br>
+<p>www.volcanica.com.uy</p>
+<h3>Cabesas Bier</h3>
+<p>Nació en Tacuarembó y es allí donde tienen su Brew house. <br>En Montevideo se la puede encontrar en varios pubs, supermercados y restaurantes.<br> La fábrica, con capacidad para elaborar unos 30.000 litros mensuales, <br>está también ubicada en Tacuarembó. Elabora ocho estilos -Blonde Ale, Pilsen Lager, <br>Scottisch Ale, Brown Porter, Pumpkin Ale, Oatmeal Stout, India Pale Ale y Trigo. </p><br>
+<img height="330" width="280" src="{% static 'IMG/cabesas2.jpg' %}">&emsp;<img height="330" width="280" src="{% static 'IMG/cabesas5.jpg' %}">&emsp;<img height="330" width="280"src="{% static 'IMG/cabesas3.jpg' %}">&emsp;<img height="330" width="280" src="{% static 'IMG/cabesas4.jpg' %}"><br>
+<p>www.cabesasbier.uy</p>
+<h3>Bizarra beer</h3>
+<p>"Bizarra más que un tipo de cerveza es un movimiento. <br>Invitamos a ser parte de un mundo colaborativo. Nacimos sin cervecería propia.<br> Trabajamos identificando, potenciando y reconociendo el talento. <br>
+Las cervezas se destacan por tener un toque “bizarro”.<br> Por ejemplo la Blonde Ale tiene agregados de chips de roble, la Stout tiene cacao, <br>café y roble, la Amber tiene madera<br> de maple y la de trigo tiene dulce de leche” </p><br>
+<img height="330" width="280" src="{% static 'IMG/bizarra2.jpg' %}">&emsp;<img height="330" width="280" src="{% static 'IMG/bizarra5.jpg' %}">&emsp;<img height="330" width="280"src="{% static 'IMG/bizarra.jpg' %}">&emsp;<img height="330" width="280" src="{% static 'IMG/bizarra1.jpg' %}"><br>
+<p>www.bizarra.beer</p>
+
+{% endblock %}

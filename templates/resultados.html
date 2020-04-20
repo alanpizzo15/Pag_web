@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block titulo %}Resultados{% endblock %}
+
+{% block cabecera %}<br><h1>Cuál es tu estilo?</h1>{% endblock %}
+
+{% block contenido %}
+<br>
+<p>Su búsqueda arroja los siguientes resultados: </p>
+
+{% if res %}
+	<p>Marca{{res|pluralize}} encontrada{{res|pluralize}}: {{res|length}}</p>
+	<ul id="resultado">
+		{% for a in res %}
+		<li>
+			<img src="{{a.portada.url}}">
+			<p>Marca: {{a.marca}}</p>
+
+			<p>Estilo: {{a.estilo}}</p>
+			<p>Precio: {{a.precio}}</p>
+					
+		</li> 
+		{% endfor %}
+	</ul>
+{% else %}
+<br>
+	<p>Ninguna Marca encontrada</p>
+{% endif %}
+
+{% endblock %}

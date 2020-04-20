@@ -1,0 +1,19 @@
+{% extends 'base.html' %}  
+
+{% load static %}
+
+{% block titulo %}Cerveza Artesanal{% endblock %}
+
+{% block cabecera %} 
+ {% endblock %}
+
+{% block contenido %} 
+<video id="video_background" loop="True"  autoplay muted> 
+	<source src="{% static 'IMG/sirviendocerveza.mp4' %}" type="video/mp4">	
+</video>
+<span id="cerart">Cerveza Artesanal</span>
+
+
+
+
+{% endblock %}

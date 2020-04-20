@@ -1,0 +1,33 @@
+{% extends 'base.html' %}  
+
+{% load static %}
+
+{% block titulo %}Sobre la cerveza{% endblock %}
+
+{% block cabecera %}<br><h1>Sabías Que...?</h1>{% endblock %}
+
+{% block contenido %} 
+<br>
+<p>Enamorados de lo Artesanal ❤</p>
+<br>
+<video poster="{% static 'IMG/ena.jpg' %}" loop="True" controls> 
+	<source src="{% static 'IMG/cerveza.mp4' %}" type="video/mp4">	
+</video>
+<br><br>
+<p>Nacida hace más de 5.000 años existen al menos 80 estilos de cervezas. <br>
+Y hace unos años al igual que sucedió con los alimentos orgánicos, <br> el consumo de cerveza artesanal ha ido en crecimiento.</p>
+<br><br>
+<img src="{% static 'IMG/tipos.jpg' %}">
+<br><br>
+<p>Nuevos pubs, restaurantes especializados, marcas y variedades <br> muestran que la cerveza artesanal se ganó un lugar en los corazones de todos.</p>
+<br>
+<h2>Algunas Rutas Cerveceras</h2>
+<br>
+<h3>Montevideo Beer Company &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Montevideo Brew House</h3>
+<img class="ima" src="{% static 'IMG/beercom.jpg' %}" hspace="25"><img class="ima" src="{% static 'IMG/beerhouse.jpg' %}"><br><br>
+<p>Es el punto de encuentro de jóvenes y universitarios por excelencia, after o previas.&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Cervezas artesanales uruguayas. Elaboran sus propias cervezas y además podes &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <br> Lo que buscan es recuperar la tradición de las reuniones sociales con desayunos, meriendas, &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; acompañarlas con picadas, tapas, pinchos y platos de cocina mediterránea y española.<br> hamburguesas  y sobre todas las cosas Cerveza Artesanal Uruguaya...&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</p><br>
+<h3>Shannon´s Irish Pub</h3><br>
+<img src="{% static 'IMG/tirador.jpg' %}"><br><br>
+<p>El típico bar irlandés en el corazón de Ciudad Vieja. <br>En este concurrido pub instalado en 2001 se respira un ambiente internacional<br> y se puede degustar una variedad de cervezas nacionales e importadas, <br>industriales y artesanales, así como deliciosos cocktails, whiskeys.<br> También se puede comer hamburguesas gourmet, el gramajo, las tablas de quesos y fiambres,<br> las pizzas caseras y los riquísimos postres.</p>
+
+{% endblock %}

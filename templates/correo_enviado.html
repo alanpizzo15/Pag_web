@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block titulo %}Correo enviado{% endblock %}
+
+{% block cabecera %}<br><h1>Correo enviado</h1>{% endblock %}
+
+{% block contenido %}
+<br>
+<p>Correo enviado con éxito</p>
+
+<img src="{% static IMG/enviado.jpg %}">
+{% endblock %}
